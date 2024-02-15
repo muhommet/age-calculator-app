@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(0, 0%, 94%);
+}
+.project {
+  width: 375px;
+  height: 500px;
+  padding: 20px;
+  padding-top: 40px;
+  margin-top: 10%;
+  border-radius: 20px 20px 80px 20px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-container {
+  all: unset;
+  cursor: pointer;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  width: 30px;
+  height: 30px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+form p {
+  margin-bottom: 5px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: hsl(0, 1%, 32%);
+  letter-spacing: 3px;
+}
+/* ======================== */
+#error-day,
+#error-month,
+#error-year {
+  all: unset;
+  color: red;
+  opacity: 0.6;
+  font-size: 0.5rem;
+  font-weight: 400;
+  font-style: italic;
+  display: none;
+}
+/* ============================= */
+input {
+  all: unset;
+  width: 90px;
+  height: 50px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+/* ================== */
+.input-error {
+  border: 1px solid rgb(255, 165, 165);
+}
+/* ======================== */
+.button-container {
+  border-bottom: 2px solid rgb(230, 230, 230);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+button {
+  user-select: none;
+}
+.img-container {
+  position: relative;
+  top: 30px;
+}
+.birthday-autput {
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.2;
+}
+.output-year {
+  display: flex;
+}
+.output-month {
+  display: flex;
+}
+.output-day {
+  display: flex;
+}
+span {
+  color: hsl(259, 100%, 65%);
+}
+
+/* 
+===========================================
+DESKTOP
+===========================================
+*/
+@media (min-width: 700px) {
+  .project {
+    width: 600px;
+    padding: 40px;
+    height: 480px;
+  }
+  .button-container {
+    justify-content: end;
+    margin-bottom: 0;
+  }
+  input {
+    width: 100px;
+  }
+  form {
+    gap: 30px;
+    padding-right: 100px;
+  }
+  .day {
+    display: flex;
+    flex-direction: column;
+  }
+  .month {
+    display: flex;
+    flex-direction: column;
+  }
+  .year {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-container {
+    width: 70px;
+    height: 70px;
+    top: 5px;
+  }
+  .birthday-autput {
+    font-size: 4.5rem;
+    padding-right: 120px;
+  }
+  .button-container {
+    height: 40px;
+    margin-bottom: 20px;
+  }
+}
