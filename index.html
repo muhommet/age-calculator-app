@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- =FONT -->
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="project">
+      <div class="birthday-input">
+        <form id="form" action="">
+          <div class="day">
+            <p>DAY</p>
+            <input id="input-day" type="text" placeholder="DD" />
+            <p id="error-day">This field is required</p>
+          </div>
+          <div class="month">
+            <p>MONTH</p>
+            <input id="input-month" type="text" placeholder="MM" />
+            <p id="error-month">This field is required</p>
+          </div>
+          <div class="year">
+            <p>YEAR</p>
+            <input id="input-year" type="text" placeholder="YYYY" />
+            <p id="error-year">This field is required</p>
+          </div>
+        </form>
+      </div>
+      <div class="button-container">
+        <button class="img-container">
+          <img src="./assets/images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
+      <div class="birthday-autput">
+        <div class="output-year">
+          <span id="year">--</span>
+          <p>years</p>
+        </div>
+        <div class="output-month">
+          <span id="month">--</span>
+          <p>months</p>
+        </div>
+        <div class="output-day">
+          <span id="day">--</span>
+          <p>days</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
